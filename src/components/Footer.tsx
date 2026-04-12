@@ -1,13 +1,15 @@
+import logo from "@/assets/xprint-logo.png";
+
 const Footer = () => {
   return (
     <footer className="border-t border-foreground/10 px-6 lg:px-8 py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         <div className="space-y-3">
-          <div className="text-xl font-black uppercase font-body">
-            X<span className="text-magenta-press">Print</span>
-          </div>
+          <a href="#">
+            <img src={logo} alt="XPrint DTF Printing" className="h-10 w-auto" />
+          </a>
           <p className="text-[10px] leading-tight text-muted-foreground uppercase tracking-wider font-body">
-            © 2024 XPrint — Premium Printing Services<br />
+            © 2024 XPrint — Premium DTF Printing Services<br />
             All Rights Reserved
           </p>
         </div>
