@@ -13,6 +13,9 @@ const Footer = () => {
             © 2024 XPrint — Premium DTF Printing Services<br />
             All Rights Reserved
           </p>
+          <p className="text-[10px] text-muted-foreground font-body">
+            Developed by <a href="https://aknextgensolutions.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-cyan-press transition-colors">AK NextGen Solutions</a>
+          </p>
         </div>
         <div className="flex gap-12 font-body">
           <div className="space-y-2">
