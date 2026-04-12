@@ -1,4 +1,4 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -13,6 +13,10 @@ const Contact = () => {
           </p>
         </div>
         <div className="space-y-3 font-body text-sm">
+          <a href="mailto:xprintdtf@gmail.com" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <Mail size={16} />
+            <span>xprintdtf@gmail.com</span>
+          </a>
           <a href="tel:+917569864565" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Phone size={16} />
             <span>+91 7569864565</span>

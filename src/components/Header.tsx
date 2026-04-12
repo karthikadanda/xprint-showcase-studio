@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/xprint-logo.png";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <header className="border-b border-foreground/10">
-      <div className="container mx-auto flex justify-between items-center py-6 px-6 lg:px-8">
+      <div className="container mx-auto flex justify-between items-center py-4 px-6 lg:px-8">
         <div className="flex items-center gap-8">
-          <div className="text-2xl font-black tracking-tighter uppercase font-body">
-            X<span className="text-magenta-press">Print</span>
-          </div>
+          <a href="#">
+            <img src={logo} alt="XPrint DTF Printing" className="h-12 w-auto" />
+          </a>
           <nav className="hidden md:flex gap-6 text-sm font-medium uppercase tracking-widest font-body">
             <a href="#services" className="hover:text-cyan-press transition-colors">Services</a>
             <a href="#portfolio" className="hover:text-magenta-press transition-colors">Portfolio</a>
