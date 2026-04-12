@@ -17,6 +17,8 @@ const services = [
       "Heat Transfer",
       "Embroidery",
       "Custom Designs",
+      "Sports Jerseys & Team Uniforms",
+      "Brand Promotion",
     ],
   },
   {
@@ -28,7 +30,7 @@ const services = [
     image: serviceVinyl,
     items: [
       "Sticker & Decals",
-      "Banner Printing",
+      "Vinyl Banners for Outdoor Advertising",
       "Vehicle Wraps",
       "Window Graphics",
       "Floor Graphics",
@@ -42,9 +44,9 @@ const services = [
     hoverColor: "hover:bg-yellow-press/5",
     image: serviceEcosolvent,
     items: [
-      "Large Format Prints",
+      "Large Format Displays",
       "Outdoor Banners",
-      "Canvas Prints",
+      "Canvas Art for Wall Decorations",
       "Backlit Displays",
       "Eco-Friendly Inks",
       "Jute Bags",
