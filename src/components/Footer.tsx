@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="space-y-2">
             <span className="text-[10px] font-bold text-muted-foreground uppercase">Follow Us</span>
             <ul className="text-xs font-bold space-y-1 uppercase">
-              <li><a href="#" className="hover:text-cyan-press transition-colors">Instagram</a></li>
-              <li><a href="#" className="hover:text-magenta-press transition-colors">Facebook</a></li>
-              <li><a href="#" className="hover:text-cyan-press transition-colors">WhatsApp</a></li>
+              <li><a href="https://www.instagram.com/xprintdtf?igsh=MW01dWdxazJkdjExYQ==" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-press transition-colors">Instagram</a></li>
+              <li><a href="https://www.facebook.com/share/18FERRWzBB/" target="_blank" rel="noopener noreferrer" className="hover:text-magenta-press transition-colors">Facebook</a></li>
+              <li><a href="https://wa.me/917569864565" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-press transition-colors">WhatsApp</a></li>
             </ul>
           </div>
           <div className="space-y-2">

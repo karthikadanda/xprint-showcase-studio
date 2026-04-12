@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
           </div>
           <p className="font-body text-xs uppercase tracking-widest opacity-70">
-            Mon–Sat / 10:00 AM – 7:00 PM
+            Open 7 Days / 10:00 AM – 9:00 PM
           </p>
         </div>
       </div>

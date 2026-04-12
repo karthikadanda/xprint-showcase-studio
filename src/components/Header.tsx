@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Instagram, Facebook, MessageCircle } from "lucide-react";
 import logo from "@/assets/xprint-logo.png";
+
+const INSTAGRAM_URL = "https://www.instagram.com/xprintdtf?igsh=MW01dWdxazJkdjExYQ==";
+const FACEBOOK_URL = "https://www.facebook.com/share/18FERRWzBB/";
+const WHATSAPP_URL = "https://wa.me/917569864565";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -19,11 +24,10 @@ const Header = () => {
             <a href="#contact" className="hover:text-magenta-press transition-colors">Contact</a>
           </nav>
         </div>
-        <div className="hidden md:flex items-center gap-3">
-          <div className="size-3 rounded-full bg-cyan-press" />
-          <div className="size-3 rounded-full bg-magenta-press" />
-          <div className="size-3 rounded-full bg-yellow-press" />
-          <div className="size-3 rounded-full bg-foreground" />
+        <div className="hidden md:flex items-center gap-4">
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-magenta-press transition-colors"><Instagram size={18} /></a>
+          <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-press transition-colors"><Facebook size={18} /></a>
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors"><MessageCircle size={18} /></a>
         </div>
         <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -35,6 +39,11 @@ const Header = () => {
           <a href="#portfolio" onClick={() => setMobileOpen(false)}>Portfolio</a>
           <a href="#about" onClick={() => setMobileOpen(false)}>About</a>
           <a href="#contact" onClick={() => setMobileOpen(false)}>Contact</a>
+          <div className="flex gap-4 pt-2 border-t border-foreground/10">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"><Instagram size={18} /></a>
+            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer"><Facebook size={18} /></a>
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"><MessageCircle size={18} /></a>
+          </div>
         </nav>
       )}
     </header>
