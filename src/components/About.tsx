@@ -19,7 +19,7 @@ const About = () => {
             Why XPrint?
           </h2>
           <p className="text-background/60 text-sm leading-relaxed font-body max-w-md">
-            We're not just a print shop — we're your creative production partner. With state-of-the-art equipment and a team of experienced designers, we deliver print products that make an impact. From concept to delivery, we handle every detail.
+            Specialising in DTF (Direct-to-Film) printing, we deliver photo-quality, wash-resistant transfers on any fabric. From custom tees and sports jerseys to jute bags and corporate bulk — our DTF technology ensures vivid colour and lasting durability.
           </p>
         </div>
         <div className="lg:col-span-7">
