@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/hero-print.jpg";
+import { buildWhatsAppUrl, WA_MESSAGES } from "@/lib/whatsapp";
+import { WhatsAppIcon } from "./SocialIcons";
 
 const Hero = () => {
   return (
@@ -19,9 +21,21 @@ const Hero = () => {
             <p className="text-base lg:text-lg max-w-[32ch] mb-8 leading-relaxed font-body">
               Hyderabad's trusted DTF printing specialists — vibrant, durable transfers on apparel, jerseys, bags & more. Plus vinyl, eco-solvent & large format printing.
             </p>
-            <Button variant="press" size="lg" asChild>
-              <a href="#contact">Get a Free Quote</a>
-            </Button>
+            <div className="flex flex-wrap gap-3">
+              <Button variant="press" size="lg" asChild>
+                <a
+                  href={buildWhatsAppUrl(WA_MESSAGES.quote)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <WhatsAppIcon size={18} />
+                  Get a Free Quote
+                </a>
+              </Button>
+              <Button variant="press" size="lg" asChild>
+                <a href="#contact">Contact Us</a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

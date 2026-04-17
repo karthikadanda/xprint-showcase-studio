@@ -1,4 +1,6 @@
 import { Phone, MapPin, Mail } from "lucide-react";
+import { buildWhatsAppUrl, WA_MESSAGES } from "@/lib/whatsapp";
+import { WhatsAppIcon } from "./SocialIcons";
 
 const Contact = () => {
   return (
@@ -11,6 +13,15 @@ const Contact = () => {
           <p className="font-body text-sm max-w-sm opacity-80 mb-8">
             Send us your designs or let us create something from scratch. Fast turnaround, competitive pricing, exceptional quality.
           </p>
+          <a
+            href={buildWhatsAppUrl(WA_MESSAGES.quote)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 text-xs font-body font-bold uppercase tracking-widest hover:opacity-90 transition-opacity self-start"
+          >
+            <WhatsAppIcon size={16} />
+            Get a Free Quote on WhatsApp
+          </a>
         </div>
         <div className="space-y-3 font-body text-sm">
           <a href="mailto:xprintdtf@gmail.com" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
@@ -39,9 +50,18 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <p className="font-body text-xs uppercase tracking-widest opacity-70">
+          <p className="font-body text-xs uppercase tracking-widest opacity-70 mb-4">
             Open 7 Days / 10:00 AM – 9:00 PM
           </p>
+          <a
+            href={buildWhatsAppUrl(WA_MESSAGES.contact)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-background text-foreground px-5 py-2.5 text-xs font-body font-bold uppercase tracking-widest hover:opacity-90 transition-opacity"
+          >
+            <WhatsAppIcon size={14} />
+            Message Us Now
+          </a>
         </div>
       </div>
     </section>

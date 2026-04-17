@@ -2,6 +2,8 @@ import { Shirt, Sticker, Leaf } from "lucide-react";
 import serviceTshirt from "@/assets/service-tshirt.jpg";
 import serviceVinyl from "@/assets/service-vinyl.jpg";
 import serviceEcosolvent from "@/assets/service-ecosolvent.jpg";
+import { buildWhatsAppUrl, WA_MESSAGES } from "@/lib/whatsapp";
+import { WhatsAppIcon } from "./SocialIcons";
 
 const services = [
   {
@@ -103,6 +105,15 @@ const Services = () => {
                   ))}
                 </ul>
               </div>
+              <a
+                href={buildWhatsAppUrl(WA_MESSAGES.service(s.title))}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center gap-2 text-xs font-body font-bold uppercase tracking-widest border-b border-foreground pb-1 self-start hover:text-[#25D366] hover:border-[#25D366] transition-colors"
+              >
+                <WhatsAppIcon size={14} />
+                Enquire on WhatsApp
+              </a>
             </div>
           </div>
         ))}
