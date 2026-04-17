@@ -49,6 +49,7 @@ const Portfolio = () => {
               <div>
                 <h4 className="font-bold uppercase text-sm">Outdoor Advertising</h4>
                 <p className="text-xs text-muted-foreground">Vinyl Banners & Signage</p>
+                <div className="mt-2"><WaLink work="Outdoor Advertising — Vinyl Banners" /></div>
               </div>
               <span className="text-xs">2024</span>
             </div>
@@ -70,6 +71,7 @@ const Portfolio = () => {
               <div className="font-body">
                 <h4 className="font-bold uppercase text-sm">Sports Jerseys & Team Uniforms</h4>
                 <p className="text-xs text-muted-foreground">Custom Sublimation & Screen Print</p>
+                <div className="mt-2"><WaLink work="Sports Jerseys & Team Uniforms" /></div>
               </div>
             </div>
           </div>
@@ -91,6 +93,7 @@ const Portfolio = () => {
             <div className="font-body">
               <h4 className="font-bold uppercase text-sm">T-Shirt Collection</h4>
               <p className="text-xs text-muted-foreground">Screen Print, DTG & Heat Transfer</p>
+              <div className="mt-2"><WaLink work="Custom T-Shirt Collection" /></div>
             </div>
           </div>
 
@@ -108,6 +111,7 @@ const Portfolio = () => {
             <div className="font-body">
               <h4 className="font-bold uppercase text-sm">Vinyl & Signage</h4>
               <p className="text-xs text-muted-foreground">Stickers, Decals & Window Graphics</p>
+              <div className="mt-2"><WaLink work="Vinyl & Signage — Stickers / Decals" /></div>
             </div>
           </div>
 
@@ -125,6 +129,7 @@ const Portfolio = () => {
             <div className="font-body">
               <h4 className="font-bold uppercase text-sm">Brand Promotion Apparel</h4>
               <p className="text-xs text-muted-foreground">Embroidery, Caps & Corporate Wear</p>
+              <div className="mt-2"><WaLink work="Brand Promotion Apparel" /></div>
             </div>
           </div>
         </div>
@@ -145,6 +150,7 @@ const Portfolio = () => {
             <div className="font-body">
               <h4 className="font-bold uppercase text-sm">Large Format Displays</h4>
               <p className="text-xs text-muted-foreground">Eco-Solvent Prints & Backlit Displays</p>
+              <div className="mt-2"><WaLink work="Large Format Displays" /></div>
             </div>
           </div>
 
@@ -162,6 +168,7 @@ const Portfolio = () => {
             <div className="font-body">
               <h4 className="font-bold uppercase text-sm">Canvas Art</h4>
               <p className="text-xs text-muted-foreground">Wall Decorations & Custom Art Prints</p>
+              <div className="mt-2"><WaLink work="Canvas Art for Wall Decorations" /></div>
             </div>
           </div>
         </div>
@@ -183,6 +190,7 @@ const Portfolio = () => {
               <div className="font-body">
                 <h4 className="font-bold uppercase text-sm">Eco-Friendly Collection</h4>
                 <p className="text-xs text-muted-foreground">Jute Bags & Corporate Orders</p>
+                <div className="mt-2"><WaLink work="Eco-Friendly Jute Bags & Corporate Gifts" /></div>
               </div>
             </div>
 
@@ -196,6 +204,15 @@ const Portfolio = () => {
               <p className="text-xs uppercase tracking-widest opacity-60 font-body">
                 Let's discuss your next project
               </p>
+              <a
+                href={buildWhatsAppUrl(WA_MESSAGES.contact)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 text-xs font-body font-bold uppercase tracking-widest hover:opacity-90 transition-opacity"
+              >
+                <WhatsAppIcon size={16} />
+                Chat on WhatsApp
+              </a>
             </div>
           </div>
         </div>
