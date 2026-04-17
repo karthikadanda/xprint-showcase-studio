@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://aknextgensolutions-ux.github.io/xprint-showcase-studio",
+  "homepage": "https://xprint.services",
   "type": "module",
   "scripts": {
     "dev": "vite",
